@@ -1,3 +1,40 @@
+/*
+1. provide a linking mechanism for the tab links and the tab items using data-tab in the html
+2. get all the tabs from the DOM
+3. for each DOM tab, create a JS object component
+4. in the object constructor, create a property that gets the item from the DOM
+5. turn that property into another JS object or subcomponent.
+6. in the item subcomponent, create a method that toggles the selected class from the clicked tab link.  ...........
+*/
+
+class Tab {
+    constructor(tab) {
+        this.tab = tab;
+        
+    }
+    
+}
+
+
+const tabs = document.querySelectorAll('.tabs-link');
+
+tabs.forEach(tab => new Tab(tab));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 //class TabLink {
 //  constructor(element) {

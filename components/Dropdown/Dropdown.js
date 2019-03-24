@@ -1,7 +1,7 @@
 /*
 DROP-DOWN Menu: create a click event on the dropdown button that toggles the menu to display.  remove the dropdown-hidden class from the button.
-1. get the links from the DOM
-2. for each link, create a JS object.
+1. get the drop down button from the DOM
+2. create a JS object for the drop down button.
 3. in the object, create a property that gets the actual menu. 
 4. create a method on the object that toggles the .dropdown-hidden class of the menu.
 */
@@ -29,49 +29,6 @@ class Dropdown {
     }
 }
 
-
 let dropdown = document.querySelector('.dropdown-button');
 
 dropdown = new Dropdown(dropdown);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//class Dropdown {
-//  constructor(element) {
-//    
-//    // Assign this.element to the dropdown element
-//    this.element;
-//    
-//    // Get the element with the ".dropdown-button" class found in the dropdown element (look at the HTML for context)
-//    this.button = this.element.querySelector();
-//    
-//    // assign the reference to the ".dropdown-content" class found in the dropdown element
-//    this.content;
-//    
-//    // Add a click handler to the button reference and call the toggleContent method.
-//    this.button.addEventListener('click', () => {
-//
-//    })
-//  }
-//
-//  toggleContent() {
-//    
-//    // Toggle the ".dropdown-hidden" class off and on
-//    this.content;
-//  }
-//}
-//
-//
-//// Nothing to do here, just study what the code is doing and move on to the Dropdown class
-//let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
