@@ -21,14 +21,20 @@ class Dropdown {
     constructor(dropdown) {
         this.dropdown = dropdown;
         this.menu = document.querySelector('.dropdown-content');
+        this.menuLinks = document.querySelectorAll('.dropdown-link');
         this.dropdown.addEventListener('click', () => this.toggleMenu());
     }
     
     toggleMenu() {
         this.menu.classList.toggle('dropdown-hidden');
+        TweenMax.from(this.menu, .5, {opacity: 0, scaleY:0, scaleX:0});
+        TweenMax.staggerFrom(this.menuLinks, 1, {opacity: 0}, .1);
+        
     }
 }
 
 let dropdown = document.querySelector('.dropdown-button');
 
 dropdown = new Dropdown(dropdown);
+
+

@@ -13,9 +13,13 @@ class Tab {
         
         this.tab.classList.add('tabs-link-selected');
         this.item.classList.add('tabs-item-selected');
+        TweenMax.from(this.item, 3, {opacity:0});
     }
 }
 const tabs = document.querySelectorAll('.tabs-link');
 const items = document.querySelectorAll('.tabs-item');
 
 tabs.forEach(tab => new Tab(tab));
+
+
+
